@@ -1,10 +1,13 @@
 from dotenv import load_dotenv
-load_dotenv()
-
 import google.generativeai as genai
 import os
 import streamlit as st
 
+# Loading the Environmental Variable
+load_dotenv()
+
+
+# Gemini API Key
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 # SET UP MODEL
